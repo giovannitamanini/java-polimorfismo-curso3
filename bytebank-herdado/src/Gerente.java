@@ -3,6 +3,10 @@ public class Gerente extends Funcionario{
 
     private int senha;
 
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
+
     public boolean autentica(int senha) {
         if (this.senha == senha) {
             return true;
@@ -11,12 +15,8 @@ public class Gerente extends Funcionario{
         }
     }
 
-    public void setSenha(int senha) {
-        this.senha = senha;
+    public double getBonificacao() {
+        return  super.getBonificacao() + super.getSalario(); //Super significa que os métodos estão definidos na classe mãe
     }
 
-    //public double getBonificacao() {
-    //
-      //  return this.salario;
-    //}
 }
