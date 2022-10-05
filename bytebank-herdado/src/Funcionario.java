@@ -1,13 +1,12 @@
-public class Funcionario {
+// Não pode instanciar dessa classe, pois é abstrata
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     private double salario;
 
-    public double getBonificacao() {
-        System.out.println("Chamando método de bonificação do funcionário");
-        return this.salario * 0.05;
-    }
+    //método sem corpo,  sem implementação, somente nos métodos filhos
+    public abstract double getBonificacao();
 
     public String getNome() {
         return this.nome;

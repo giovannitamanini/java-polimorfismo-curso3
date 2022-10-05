@@ -5,6 +5,11 @@ public class CurrentAccount extends Account {
     }
 
     @Override
+    public void deposit(double value) {
+        super.balance += value;
+    }
+
+    @Override
     public boolean withdraw(double value) {
         double withdrawValue = value + 0.2;
         return super.withdraw(withdrawValue);
