@@ -1,8 +1,8 @@
-package bytebank.banco.modelo;
+package br.com.bytebank.banco.modelo;
 
 import org.jetbrains.annotations.NotNull;
 
-//bytebank.banco.modelo.CalculadorDeImposto => FQN (full qualified name)
+//br.com.bytebank.banco.modelo.CalculadorDeImposto => FQN (full qualified name)
 public class CalculadorDeImposto {
     private double totalImposto;
 
