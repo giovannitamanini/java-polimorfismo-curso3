@@ -1,4 +1,4 @@
-package modelo;
+package bytebank.banco.modelo;
 
 public class ContaPoupanca extends Conta {
 

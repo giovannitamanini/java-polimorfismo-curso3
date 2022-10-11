@@ -1,4 +1,4 @@
-package modelo;
+package bytebank.banco.modelo;
 
 public abstract class Conta {
     protected double saldo;
@@ -9,7 +9,7 @@ public abstract class Conta {
 
     public Conta(int agencia, int numero) {
         Conta.total++;
-        //System.out.println("O total de contas aberto é: " + modelo.Conta.total);
+        //System.out.println("O total de contas aberto é: " + bytebank.banco.modelo.Conta.total);
         this.agencia = agencia;
         this.numero = numero;
         //this.saldo = 100;

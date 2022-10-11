@@ -1,8 +1,8 @@
-package teste;
+package bytebank.banco.teste;
 
-import modelo.CalculadorDeImposto;
-import modelo.ContaCorrente;
-import modelo.SeguraDeVida;
+import bytebank.banco.modelo.CalculadorDeImposto;
+import bytebank.banco.modelo.ContaCorrente;
+import bytebank.banco.modelo.SeguraDeVida;
 
 public class TesteTributaveis {
 
