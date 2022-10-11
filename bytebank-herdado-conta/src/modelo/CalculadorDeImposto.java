@@ -1,5 +1,8 @@
+package modelo;
+
 import org.jetbrains.annotations.NotNull;
 
+//modelo.CalculadorDeImposto => FQN (full qualified name)
 public class CalculadorDeImposto {
     private double totalImposto;
 

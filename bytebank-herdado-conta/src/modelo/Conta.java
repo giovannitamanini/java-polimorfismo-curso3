@@ -1,3 +1,5 @@
+package modelo;
+
 public abstract class Conta {
     protected double saldo;
     private int agencia;
@@ -7,7 +9,7 @@ public abstract class Conta {
 
     public Conta(int agencia, int numero) {
         Conta.total++;
-        //System.out.println("O total de contas aberto é: " + Conta.total);
+        //System.out.println("O total de contas aberto é: " + modelo.Conta.total);
         this.agencia = agencia;
         this.numero = numero;
         //this.saldo = 100;
