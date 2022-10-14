@@ -1,0 +1,10 @@
+src/META-INF
+/resources
+/jquery
+*.html
+*.zip
+*.js
+element-list
+*.css
+*.swp
+
