@@ -5,8 +5,10 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsuficienteException;
 
+ //br.com.bytebank.banco.teste.TesteContas
 public class TesteContas {
 
+    //java.lang.String
     public static void main(String[] args) throws SaldoInsuficienteException {
 
         ContaCorrente outra = null;
@@ -19,6 +21,8 @@ public class TesteContas {
         contaPoupanca.deposita(200.0);
 
         contaCorrente.transfere(10.0, contaPoupanca);
+
+        ContaEspecial especial = new ContaEspecial(333, 333);
 
         System.out.println("Saldo da conta corrente: " + contaCorrente.getSaldo());
         System.out.println("Saldo da conta poupança: " + contaPoupanca.getSaldo());

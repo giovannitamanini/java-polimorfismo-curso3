@@ -1,12 +1,10 @@
 package br.com.bytebank.banco.modelo;
 
-import org.jetbrains.annotations.NotNull;
-
 //br.com.bytebank.banco.modelo.CalculadorDeImposto => FQN (full qualified name)
 public class CalculadorDeImposto {
     private double totalImposto;
 
-    public void registra(@NotNull Tributavel t) {
+    public void registra(Tributavel t) {
         double valor = t.getValorImposto();
         this.totalImposto += valor;
     }
