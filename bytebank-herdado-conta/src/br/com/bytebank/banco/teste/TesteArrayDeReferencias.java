@@ -20,5 +20,11 @@ public class TesteArrayDeReferencias {
 
         System.out.println(cc2.getNumero());
         System.out.println(ref.getNumero());
+
+        int[] refs = {1, 2 ,3 , 4, 5};
+
+        for(int i = 0; i < refs.length; i++) {
+            System.out.println(refs[i]);
+        }
     }
 }
