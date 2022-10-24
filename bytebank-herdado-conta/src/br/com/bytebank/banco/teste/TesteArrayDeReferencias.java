@@ -25,7 +25,6 @@ public class TesteArrayDeReferencias {
         /*Object referenciaGenerica = contas[1];
 
         System.out.println(contas[1].getNumero());*/
-
         ContaPoupanca ref = (ContaPoupanca) referencias[1]; //Type Cast
         System.out.println(cc2.getNumero());
         System.out.println(ref.getNumero());
