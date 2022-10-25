@@ -11,6 +11,8 @@ public class TesteArrayDeReferencias {
 
         Object[] referencias = new Object[5]; // Nesta linha é criada uma Array que pode guardar 5 referências do tipo Conta Corrente
 
+        System.out.println(referencias.length);
+
         ContaCorrente cc1 = new ContaCorrente(22, 11);
         referencias[0] = cc1;
 
