@@ -73,6 +73,20 @@ public abstract class Conta {
         this.titular = titular;
     }
 
+    @Override
+    public boolean equals(Object ref) {
+
+        Conta conta = (Conta) ref;
+
+        if (this.agencia != conta.agencia) {
+            return false;
+        }
+            if (this.numero != conta.numero) {
+                return false;
+            }
+            return true;
+    }
+
     public String toString() {
         return " Número: " + this.numero + ", Agência: " + this.agencia;
     }
