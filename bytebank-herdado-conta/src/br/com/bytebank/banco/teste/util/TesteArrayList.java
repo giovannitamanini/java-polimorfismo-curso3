@@ -4,13 +4,15 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TesteArrayList {
 
     public static void main(String[] args) {
 
         //Generics <> para tipificar o que se guarda dentro da Array
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        List<Conta> lista = new LinkedList<Conta>();
 
         ArrayList<String> nomes = new ArrayList<String>();
 
