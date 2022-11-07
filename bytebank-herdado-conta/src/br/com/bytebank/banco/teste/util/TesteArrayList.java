@@ -6,13 +6,14 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class TesteArrayList {
 
     public static void main(String[] args) {
 
         //Generics <> para tipificar o que se guarda dentro da Array
-        List<Conta> lista = new LinkedList<Conta>();
+        List<Conta> lista = new Vector<Conta>();
 
         ArrayList<String> nomes = new ArrayList<String>();
 
