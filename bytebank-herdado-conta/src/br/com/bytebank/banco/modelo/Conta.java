@@ -4,7 +4,7 @@ package br.com.bytebank.banco.modelo;
  * Classe representa a moldura de uma conta
  * @author Giovanni Tamanini
  */
-public abstract class Conta {
+public abstract class Conta extends Object implements Comparable<Conta> {
     protected double saldo; //privacidade package private --> visível somente no pacote
     private int agencia;
     private int numero;
@@ -87,7 +87,12 @@ public abstract class Conta {
             return true;
     }
 
+    @Override
+    public int compareTo(Conta outra) {
+        return Double.compare(this.saldo, outra.saldo);
+    }
+
     public String toString() {
-        return " Número: " + this.numero + ", Agência: " + this.agencia;
+        return " Número: " + this.numero + ", Agência: " + this.agencia + ", Saldo: " + this.saldo;
     }
 }
