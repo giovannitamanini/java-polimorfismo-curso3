@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Teste {
+public class TesteOrdenacao {
 
     public static void main(String[] args) {
 
@@ -43,8 +43,19 @@ public class Teste {
         lista.add(cc3);
         lista.add(cc4);
 
-        NumeroDaContaComparator2 comparator = new NumeroDaContaComparator2();
-        lista.sort(comparator);
+        for (Conta conta: lista) {
+            System.out.println(conta + ", " + conta.getTitular().getNome());
+        }
+
+        //NumeroDaContaComparator comparator = new NumeroDaContaComparator();
+        //TitularDaContaComparator titularComparator = new TitularDaContaComparator();
+        lista.sort(null); // Ordem Natural
+
+        //Collections.sort(lista, new NumeroDaContaComparator()); // Forma legada de fazer ordenação
+        //Collections.sort(lista);
+        //Collections.reverse(lista);
+
+        System.out.println("------------");
 
         for (Conta conta: lista) {
             System.out.println(conta + ", " + conta.getTitular().getNome());
@@ -52,20 +63,28 @@ public class Teste {
     }
 }
 
-class NumeroDaContaComparator2 implements Comparator<Conta> {
-
-    @Override
-    public int compare(Conta c1, Conta c2) {
-        return Integer.compare(c1.getNumero(), c2.getNumero());
-    }
-}
-
-class TitularDaContaComparator2 implements Comparator<Conta> {
+class TitularDaContaComparator implements Comparator<Conta> {
 
     @Override
     public int compare(Conta c1, Conta c2) {
         String nomeC1 = c1.getTitular().getNome();
         String nomeC2 = c2.getTitular().getNome();
         return nomeC1.compareTo(nomeC2);
+    }
+}
+
+class NumeroDaContaComparator implements Comparator<Conta> {
+
+    @Override
+    public int compare(Conta c1, Conta c2) {
+        return Integer.compare(c1.getNumero(), c2.getNumero());
+        //return c1.getNumero() - c2.getNumero();
+        /*if(c1.getNumero() < c2.getNumero()) {
+            return -1;
+        }
+        if(c1.getNumero() > c2.getNumero()) {
+            return 1;
+        }
+        return 0;*/
     }
 }
